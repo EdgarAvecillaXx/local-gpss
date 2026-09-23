@@ -2,7 +2,7 @@
   "fancy_screen": false,
   "database": {
     "db_type": "sqlite",
-    "connection_string": "file:data/local-gpss.db?_fk=1"
+    "connection_string": "file:data/local-gpss.db?_pragma=foreign_keys(1)"
   },
   "http": {
     "port": 8082,
