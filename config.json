@@ -1,9 +1,16 @@
 {
-  "host": "0.0.0.0",
-  "port": 8082,
-  "db": {
-    "driver": "sqlite3",
-    "address": "file:data/local-gpss.db?_fk=1"
+  "fancy_screen": false,
+  "database": {
+    "db_type": "sqlite",
+    "connection_string": "file:data/local-gpss.db?_fk=1"
   },
-  "log_level": "info"
+  "http": {
+    "port": 8082,
+    "listening_addr": "0.0.0.0"
+  },
+  "misc": {
+    "recheck_legality": false,
+    "migrate_original_db": false,
+    "download_original_db": false
+  }
 }
