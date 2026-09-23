@@ -25,7 +25,7 @@ FROM alpine:latest AS runner
 
 WORKDIR /app
 
-RUN mkdir bin
+RUN mkdir -p bin data
 
 COPY --from=dotnet-build /app/output/GpssConsole ./bin/GpssConsole
 COPY --from=go-build /app/local-gpss ./local-gpss
